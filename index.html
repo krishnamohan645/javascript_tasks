@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images changing </title>
+    <style>
+        body{
+            background-image: url(./background_choose.jpg);
+            background-repeat: repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        #mainDiv{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            border: 2px solid white;
+            /* margin: 50px; */
+            margin-left: 150px;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var mainDiv = document.createElement("div")
+        document.body.appendChild(mainDiv)
+        mainDiv.setAttribute("id","mainDiv")
+
+        var image1 = document.createElement("img")
+        mainDiv.appendChild(image1);
+        image1.setAttribute("id","image1")
+        image1.src = "./thor_child.jpg";
+
+        image1.addEventListener("click", function(){
+            image1.src = "./thor.webp";
+        });
+
+        var image2 = document.createElement("img")
+        mainDiv.appendChild(image2);
+        image2.setAttribute("id","image2")
+        image2.src = "./spider_child.jpg";
+
+        image2.addEventListener("click", function(){
+            image2.src = "./spider.avif";
+        });
+
+        var image3 = document.createElement("img")
+        mainDiv.appendChild(image3);
+        image3.setAttribute("id","image3")
+        image3.src = "./iron_man_child.jpg";
+
+        image3.addEventListener("click", function(){
+            image3.src = "./iron_man.jpg";
+        });
+
+        var image4 = document.createElement("img")
+        mainDiv.appendChild(image4);
+        image4.setAttribute("id","image4")
+        image4.src = "./hulk_child.avif";
+
+        image4.addEventListener("click", function(){
+            image4.src = "./hulk.webp";
+        });
+
+        var image5 = document.createElement("img")
+        mainDiv.appendChild(image5);
+        image5.setAttribute("id","image5")
+        image5.src = "./captain_child.jpg";
+
+        image5.addEventListener("click", function(){
+            image5.src = "./captain.jpg";
+        });
+
+        var image6 = document.createElement("img")
+        mainDiv.appendChild(image6);
+        image6.setAttribute("id","image6")
+        image6.src = "./black_child.jpg";
+
+        image6.addEventListener("click", function(){
+            image6.src = "./black.avif";
+        });
+    </script>
+</body>
+</html>
