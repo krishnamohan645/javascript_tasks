@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        /* font-size: 50px; */
+        color: goldenrod;
+        margin-top: 50px;
+    }
+    h3{
+        text-align: center;
+        margin-top: -10px;
+    }
+    h2{
+        font-size: large;
+    }
+    img{
+        height:150px;
+        width: 120px;
+        position: relative;
+        left: 1300px;
+        top: -150px;
+    }
+    hr{
+        margin-top: -120px;
+    }
+    legend{
+        font-size: larger;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <!-- <h1>
+        hi everyone
+    </h1>
+    <h1>
+        hello guys
+    </h1>
+    <h1>
+        welcome
+    </h1> -->
+    <script>
+        // var element = document.getElementsByTagName("h1");
+        // var array = [];
+        // for(let i=0;i<element.length;i++){
+        //     array.push(element[i].innerText)
+        // }
+        // console.log(array)
+                // console.log(document.body)
+                // ----for details 
+        var head = document.createElement("h1");
+        document.body.appendChild(head);
+        head.innerText = "Guduri krishna mohan";
+        var gMail = document.createElement("h3");
+        document.body.appendChild(gMail);
+        gMail.innerText = "krishnaguduri08@gmail.com";
+        var mobile = document.createElement("h3");
+        document.body.appendChild(mobile);
+        mobile.innerText = 7995680325;
+
+        // ---for img
+        var pic = document.createElement("img");
+        pic.setAttribute("src","./krishna.jpg");
+        document.body.appendChild(pic);
+
+        // ---for horizontal line
+        var horizontal = document.createElement("hr");
+        document.body.appendChild(horizontal);
+
+        //--- career objective
+        var crObj = document.createElement("h2");
+        document.body.appendChild(crObj);
+        crObj.innerText = "Career Objective";
+
+
+        // career objective paragraph
+        var crObjPara = document.createElement("p");
+        document.body.appendChild(crObjPara);
+        crObjPara.innerText = "To secure a challenging position in a reputable organisation to expand my learnings,knowledge and skill and to secure a responsible career opportunity to fully utilize my skills, while making a significant contribution to the success of the company."
+
+
+        // fieldset for technical skills
+        var techSkills = document.createElement("fieldset");
+        document.body.appendChild(techSkills);
+        var techSkills1 = document.createElement("legend");
+        techSkills.appendChild(techSkills1);
+        techSkills1.innerText = "Technical Skills";
+
+        // details for technical skills
+        var techSkillsUl = document.createElement("ul");
+        var techSkillsLi1 = document.createElement("li");
+        var techSkillsLi2 = document.createElement("li");
+        var techSkillsLi3 = document.createElement("li");
+        var techSkillsLi4 = document.createElement("li");
+        var techSkillsLi5 = document.createElement("li");
+        var techSkillsLi6 = document.createElement("li");
+        var techSkillsLi7 = document.createElement("li");
+        techSkills.appendChild(techSkillsUl);
+        techSkillsUl.appendChild(techSkillsLi1);
+        techSkillsUl.appendChild(techSkillsLi2);
+        techSkillsUl.appendChild(techSkillsLi3);
+        techSkillsUl.appendChild(techSkillsLi4);
+        techSkillsUl.appendChild(techSkillsLi5);
+        techSkillsUl.appendChild(techSkillsLi6);
+        techSkillsUl.appendChild(techSkillsLi7);
+        techSkillsLi1.innerText = "HTML";
+        techSkillsLi2.innerText = "CSS";
+        techSkillsLi3.innerText = "BootStrap";
+        techSkillsLi4.innerText = "MySQL";
+        techSkillsLi5.innerText = "GIT";
+        techSkillsLi6.innerText = "Github";
+        techSkillsLi7.innerText = "JavaScript";
+
+
+
+        // fieldset for hobbies
+        var hobbies = document.createElement("fieldset");
+        document.body.appendChild(hobbies);
+        var hobbies1 = document.createElement("legend");
+        hobbies.appendChild(hobbies1);
+        hobbies1.innerText = "Hobbies";
+        
+
+        // details for hobbies
+        var hobbiesUl = document.createElement("ul");
+        var hobbiesLi1 = document.createElement("li");
+        var hobbiesLi2 = document.createElement("li");
+        var hobbiesLi3 = document.createElement("li");
+        var hobbiesLi4 = document.createElement("li");
+        var hobbiesLi5 = document.createElement("li");
+
+        hobbies.appendChild(hobbiesUl);
+        hobbiesUl.appendChild(hobbiesLi1);
+        hobbiesUl.appendChild(hobbiesLi2);
+        hobbiesUl.appendChild(hobbiesLi3);
+        hobbiesUl.appendChild(hobbiesLi4);
+
+        hobbiesLi1.innerText = "watching Movies";
+        hobbiesLi2.innerText = "Listening Music";
+        hobbiesLi3.innerText = "Playing Mobile games";
+        hobbiesLi4.innerText = "Playing Bgmi";
+
+
+
+
+        // last details
+        var myName = document.createElement("p");
+        var date = document.createElement("p");
+        var sign = document.createElement("p");
+        document.body.appendChild(myName);
+        document.body.appendChild(date);
+        document.body.appendChild(sign);
+
+        myName.innerText = "Name: Krishna Mohan";
+        
+        
+        date.innerText = "Date: 15 Dec, 2024";
+        
+        
+        sign.innerText = "Signature: Krishna";w
+        </script>
+    
+
+
+</body>
+</html>
